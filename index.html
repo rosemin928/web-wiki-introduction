@@ -6,6 +6,21 @@
     <title>자기소개 위키 페이지</title>
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/index.js"></script>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3x3 그리드 */
+        gap: 10px; /* 이미지 사이 간격 */
+        width: 600px; /* 전체 그리드 크기 */
+        margin: auto; /* 가운데 정렬 */
+      }
+      .grid-container img {
+        width: 100%; /* 부모 크기에 맞춤 */
+        aspect-ratio: 1 / 1; /* 정사각형 유지 */
+        object-fit: cover; /* 이미지 비율 유지하면서 꽉 채우기 */
+        border-radius: 10px; /* 둥근 모서리 */
+      }
+    </style>
   </head>
   <body>
     <div id="app">
@@ -21,12 +36,30 @@
         <section>
           <h3 class="subtitle">자기소개</h3>
           <p>
-            안녕하세요, 저는 끊임없이 새로운 도전을 통해 성장하는 것을 즐기는 크론이에요. 안정적인 삶에서 벗어나 세 번의
-            큰 전환점을 겪으며 지금의 제가 되었어요. 어제보다 더 나은 오늘의 나를 만들기 위해 노력하고 있죠. 매일의 작은
-            성취들이 모여 제가 한 걸음 더 성장했다는 것을 느낄 때면 가슴이 벅차오르거든요. 그러다 문득, 저처럼 변화를
-            갈망하며 도전을 꿈꾸는 분들이 많다는 것을 알게 되었어요. 나의 성장도 의미 있지만, 누군가의 성장을 함께할 수
-            있다는 건 매일 새로운 설렘을 주는 일이에요.
+            안녕하세요, 비비입니다! 낯을 좀 가리지만 사람들이랑 놀고 얘기하는걸 좋아해요. 말 걸어주세용...🤍🤍
+            하면 한다 주의라 하고자 하는 것에 있어서는 될 때까지 하는 편인 것 같아요. 도전하는 것도 좋아하고
+            새로운 것들을 배우는걸 좋아해요. 이것저것 많이 했었는데 최근에는 또 너무 모든 것을 얕게만 아는게 아닌가
+            하는 생각이 들어서 깊은 공부를 해보고 싶어서 우테코에 들어왔습니당. 토론하는 것도 좋아하니 궁금한거나
+            모르겠는 부분이 있으면 저한테 공유해주세용. 도움은 안 될지 모르지만...같이 얘기하면서 생각해봐요!
           </p>
+        </section>
+
+        <section>
+          <h3 class="subtitle">나만의 갤러리</h3>
+          <article>
+            <h4>기억에 남는 여행지</h4>
+            <div class="grid-container">
+              <img src="https://via.placeholder.com/100" alt="이미지 1">
+              <img src="https://via.placeholder.com/100" alt="이미지 2">
+              <img src="https://via.placeholder.com/100" alt="이미지 3">
+              <img src="https://via.placeholder.com/100" alt="이미지 4">
+              <img src="https://via.placeholder.com/100" alt="이미지 5">
+              <img src="https://via.placeholder.com/100" alt="이미지 6">
+              <img src="https://via.placeholder.com/100" alt="이미지 7">
+              <img src="https://via.placeholder.com/100" alt="이미지 8">
+              <img src="https://via.placeholder.com/100" alt="이미지 9">
+            </div>
+          </article>
         </section>
 
         <section>
